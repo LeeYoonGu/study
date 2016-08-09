@@ -10,7 +10,6 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.14.0",
-    "gulp": "^3.9.1",
-    "gulp-connect": "^5.0.0"
+    "gulp": "^3.9.1"
   }
 }
