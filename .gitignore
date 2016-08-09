@@ -1,0 +1,6 @@
+.bowerrc
+.idea
+bower.json
+package.json
+bower_components
+node_modules
