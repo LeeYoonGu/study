@@ -1,0 +1,21 @@
+{
+  "name": "study-depend",
+  "description": "의존성 공부를하기 위해 만듦.",
+  "main": "index.js",
+  "authors": [
+    "양간장"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "angularjs#^1.5.8"
+  }
+}

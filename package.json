@@ -1,0 +1,16 @@
+{
+  "name": "study-depend",
+  "version": "0.0.1",
+  "description": "의존성 공부를하기 위해 만듦.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "양간장",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.14.0",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0"
+  }
+}
