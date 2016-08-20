@@ -4,23 +4,25 @@
   <meta charset="utf-8" />
   <!-- build:bundleCSS -->
   <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./bower_components/font-awesome/css/font-awesome.min.css" />
   <!-- endbuild -->
   <!-- build:appCSS -->
-  <link rel="stylesheet" href="styles/style.css" />
-  <link rel="stylesheet" href="styles/style2.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/style2.css" />
   <!-- endbuild -->
   <title>Title</title>
 </head>
 <body ng-app="myModule" ng-controller="ChartCtrl">
-<canvas chart-bar chart-data="children.data" chart-labels="children.labels"
-        chart-series="children.series"></canvas>
+<h1>앵귤러 차트 예제입니다.<i class="fa fa-sign-language" aria-hidden="true"></i></h1>
+<canvas chart-bar chart-data="children.data" chart-labels="children.labels" chart-series="children.series"></canvas>
 <!-- build:bundleJS -->
 <script src="./bower_components/angular/angular.min.js"></script>
 <script src="./bower_components/chart.js/dist/Chart.min.js"></script>
 <script src="./bower_components/angular-chart.js/dist/angular-chart.min.js"></script>
 <!-- endbuild -->
 <!-- build:appJS -->
-<script src="scripts/chart-ctrl.js"></script>
+<script src="./scripts/test.js"></script>
+<script src="./scripts/chart-ctrl.js"></script>
 <!-- endbuild -->
 </body>
 </html>
