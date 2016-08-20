@@ -28,9 +28,19 @@ NPM으로 설치 가능한 컴포넌트들을 Bower에서도 설치 가능하지
 이제 이 프로젝트를 사용할 준비가 끝난 것입니다.  
 그럼 이제 이 프로젝트를 자신의 컴퓨터에 다운받도록 합니다.  
 터미널(명령 프롬프트)를 열어 프로젝트 디렉토리로 이동한 후에  
-`$ git clone https://github.com/perfectacle/study`  
-를 입력합니다.
-is going to make them paragraphs.
+`$ git clone https://github.com/perfectacle/study`
+
+를 입력하면 프로젝트 내에 study 디렉토리가 생성되며  
+현재 프로젝트의 파일들이 모두 복사됩니다.  
+study 디렉토리로 이동해주도록 합시다.
+
+이제 컴포넌트를 설치할 차례입니다.
+
+`$ npm i `
+`$ bower i`
+
+를 입력하여 개발 시에만 사용할 컴포넌트,  
+배포 시에도 사용할 컴포넌트를 프로젝트 내에 설치하시면 됩니다.
 
 What about line breaks then ?  
 For line breaks just append the previous sentence with 2 spaces.
