@@ -1,6 +1,5 @@
 # 프론트 엔드 개발 의존성 관리 공부하기
-이 프로젝트는 졸작의 생산성을 높이기 위한 프로젝트입니다.
-
+이 프로젝트는 졸작의 생산성을 높이기 위한 프로젝트입니다.  
 이 프로젝트는 크게 아래와 같은 것(?)들을 썼습니다.
 
 * **NPM(Node Package Manager)** - Node.js에서 사용되는 모듈을 패키지로 모아놓은 곳
@@ -9,8 +8,7 @@
 
 NPM으로 설치 가능한 컴포넌트들을 Bower에서도 설치 가능하지만, 저는
 
-> *개발 시에만 쓰는 컴포넌트는 NPM으로*
-
+> *개발 시에만 쓰는 컴포넌트는 NPM으로*  
 > *배포 단계에서도 쓰는 컴포넌트는 Bower으로*
 
 설치했습니다.
@@ -27,13 +25,10 @@ NPM으로 설치 가능한 컴포넌트들을 Bower에서도 설치 가능하지
 * **[Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md#getting-started "Gulp Getting Started 문서")**
 
 ## 프로젝트 사용하기
-이제 이 프로젝트를 사용할 준비가 끝난 것입니다.
-
-그럼 이제 이 프로젝트를 자신의 컴퓨터에 다운받도록 합니다.
-
-터미널(명령 프롬프트)를 열어 프로젝트 디렉토리로 이동한 후에
-
-`$ git clone https://github.com/perfectacle/study`
+이제 이 프로젝트를 사용할 준비가 끝난 것입니다.  
+그럼 이제 이 프로젝트를 자신의 컴퓨터에 다운받도록 합니다.  
+터미널(명령 프롬프트)를 열어 프로젝트 디렉토리로 이동한 후에  
+`$ git clone https://github.com/perfectacle/study`  
 를 입력합니다.
 is going to make them paragraphs.
 
