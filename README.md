@@ -1,18 +1,16 @@
-<!-- h1-h6 -->
-# Heading 1
-## Heading 2
-### Heading 3
-#### Heading 4
-##### Heading 5
-###### Heading 6
+# 프론트 엔드 개발 의존성 관리 공부하기
+이 프로젝트는 졸작의 생산성을 높이기 위한 프로젝트입니다.
+이 프로젝트는 크게 아래와 같은 것(?)들을 썼습니다.
 
-<!-- Alternative syntax for h1-h2 -->
-Heading 1
-=========
-Heading 2
----------
+* **NPM(Node Package Manager)** - Node.js에서 사용되는 모듈을 패키지로 모아놓은 곳
+* **Bower** - 웹 프론트 엔드 개발의 의존성 관리를 위한 패키지 관리자
+* **Gulp** - 빌드 자동화 도구
 
-Separating your text by blank lines,
+NPM으로 설치 가능한 컴포넌트들을 Bower에서도 설치 가능하지만, 저는
+*개발 시에만 쓰는 컴포넌트는 NPM으로*
+
+그 이외 잡다구레한 프레임워크와 라이브러리는 사용자의 마음대로 쓰시면 됩니다.
+
 
 is going to make them paragraphs.
 
