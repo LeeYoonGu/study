@@ -13,8 +13,14 @@
   <title>Title</title>
 </head>
 <body ng-app="myModule" ng-controller="ChartCtrl">
-<h1>앵귤러 차트 예제입니다.<i class="fa fa-sign-language" aria-hidden="true"></i></h1>
-<canvas chart-bar chart-data="children.data" chart-labels="children.labels" chart-series="children.series"></canvas>
+<section id="chart" class="panel panel-danger">
+  <div class="panel-heading">
+    <h1>앵귤러 차트 예제입니다.<i class="fa fa-sign-language" aria-hidden="true"></i></h1>
+  </div>
+  <div class="panel-body">
+    <canvas chart-bar chart-data="children.data" chart-labels="children.labels" chart-series="children.series"></canvas>
+  </div>
+</section>
 <!-- build:bundleJS -->
 <script src="./bower_components/angular/angular.min.js"></script>
 <script src="./bower_components/chart.js/dist/Chart.min.js"></script>

@@ -156,11 +156,14 @@ gulp.task('build', ['clean'], function() {
         return logDiff(data);
       }))
       .pipe(gulp.dest(path.dist.dir));
-  // 이미지 파일들 압축.
+  /*
+   * 이미지 파일들 압축.
+   * 이 작업은 비동기 방식으로 진행되기 때문에 작업의 끝을 알려줘야 함.
+   * 따라서 마지막 작업에 return을 붙여 동기식으로 바꿔줘야 함.
+   */
   return gulp.src(path.src.img)
-      .pipe(imgMin())
-      .pipe(gulp.dest(path.dist.dir));
-  // 이 작업은 비동기 방식으로 진행되기 때문에 작업의 끝을 알려줘야 함.
+             .pipe(imgMin())
+             .pipe(gulp.dest(path.dist.dir));
 });
 // 배포용 파일을 실제로 테스트해보기 위한 작업.
 gulp.task('test', ['build'], function() {
