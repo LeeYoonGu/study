@@ -147,6 +147,15 @@ gulp.task('build', function() {
   .pipe(imgMin())
   .pipe(gulp.dest(path.dist.dir));
 });
+gulp.task('test', function() {
+  var server = liveServer.static('www/public', 8080);
+  server.start();
+  gulp.src('http://localhost:8080/');
+
+  gulp.watch(path.dist.dir + '/**/*', function(file) {
+    server.notify.apply(server, [file]);
+  });
+});
 gulp.task('default', function() {
   var server = liveServer.static('www/src', 8080);
   server.start();
