@@ -1,0 +1,6 @@
+@charset "UTF-8";
+/* 주석 1 */
+/* 주석 23 */
+div {
+  -ms-transform: rotate(46deg);
+      transform: rotate(46deg); }
