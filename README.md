@@ -28,8 +28,11 @@ NPM으로 설치 가능한 컴포넌트들을 Bower에서도 설치 가능하지
 
 ## 프로젝트 사용하기
 이제 이 프로젝트를 사용할 준비가 끝난 것입니다.
+
 그럼 이제 이 프로젝트를 자신의 컴퓨터에 다운받도록 합니다.
+
 터미널(명령 프롬프트)를 열어 프로젝트 디렉토리로 이동한 후에
+
 `$ git clone https://github.com/perfectacle/study`
 를 입력합니다.
 is going to make them paragraphs.
