@@ -2,13 +2,13 @@
 이 프로젝트는 졸작의 생산성을 높이기 위한 프로젝트입니다.  
 이 프로젝트는 크게 아래와 같은 것(?)들을 썼습니다.
 
-* **NPM(Node Package Manager)** - Node.js에서 사용되는 모듈을 패키지로 모아놓은 곳
+* **npm(Node Package Manager)** - Node.js에서 사용되는 모듈을 패키지로 모아놓은 곳
 * **Bower** - 웹 프론트 엔드 개발의 의존성 관리를 위한 패키지 관리자
 * **Gulp** - 빌드 자동화 도구
 
-NPM으로 설치 가능한 컴포넌트들을 Bower에서도 설치 가능하지만, 저는
+npm으로 설치 가능한 컴포넌트들을 Bower에서도 설치 가능하지만, 저는
 
-> *개발 시에만 쓰는 컴포넌트는 NPM으로*  
+> *개발 시에만 쓰는 컴포넌트는 npm으로*  
 > *배포 단계에서도 쓰는 컴포넌트는 Bower으로*
 
 설치했습니다.
@@ -18,11 +18,11 @@ NPM으로 설치 가능한 컴포넌트들을 Bower에서도 설치 가능하지
 ## 사전 설치해야할 사항
 이 프로젝트를 사용하기 위해서는 아래와 같은 내용들이 설치돼있어야 합니다.
 
-* **[Node.js](https://nodejs.org/ko/ "Node.js 공식 홈페이지")** - NPM을 사용하려면 필수이다.
-* **[NPM](https://docs.npmjs.com/getting-started/installing-node#updating-npm "NPM Getting Started 문서")**
+* **[Node.js](https://nodejs.org/ko/ "Node.js 공식 홈페이지")** - npm을 사용하려면 필수이다.
+* **[npm](https://docs.npmjs.com/getting-started/installing-node#updating-npm "npm Getting Started 문서")**
 * **[Bower](https://bower.io/#install-bower "Bower 공식 사이트")**
 * **[Git](https://git-scm.com/download/ "Git 다운로드 페이지")** - Bower를 통해 컴포넌트를 설치하기 위해서 필요하다.
-* **[bower-npm-resolver](https://www.npmjs.com/package/bower-npm-resolver#installation "bower-npm-resolver 소개 페이지")** - NPM으로는 설치 가능하나 Bower로는 설치가 불가능한 컴포넌트를 위해 필요하다.
+* **[bower-npm-resolver](https://www.npmjs.com/package/bower-npm-resolver#installation "bower-npm-resolver 소개 페이지")** - npm으로는 설치 가능하나 Bower로는 설치가 불가능한 컴포넌트를 위해 필요하다.
 * **[Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md#getting-started "Gulp Getting Started 문서")**
 * **[Chrome](https://www.google.com/chrome/browser/desktop/index.html "Google Chrome 브라우저 홈페이지")** - 필수는 아니지만, 자동 새로고침 확장앱을 사용하기 위해 필요하다.
 * **[LiveReload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei "LiveReload 확장앱 설치 페이지")** - Chrome 브라우저에서 자동 새로고침 기능을 사용하기 위해 필요하다.
@@ -48,7 +48,7 @@ study 디렉토리로 이동해주도록 합시다.
 
 ## 프로젝트 사용하기
 이제 실제로 프로젝트를 사용해볼 차례입니다.  
-NPM과 Bower, Gulp의 사용법은 설명하지 않도록 하겠습니다.  
+npm과 Bower, Gulp의 사용법은 설명하지 않도록 하겠습니다.  
 해당 내용들은 다른 문서들을 통해 찾아보시기 바랍니다.  
 개발을 진행하실 때는 아래와 같은 명령어를 입력한 후 개발을 진행하시면,  
 생산성 향상에 도움이 될 것입니다.
