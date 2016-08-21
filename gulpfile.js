@@ -19,38 +19,44 @@ var gulp         = require('gulp'),
       src: {
         lib: {
           css: [],
-          js: []
+          js: [],
         }
       },
-      dist: {},
+      dist: {
+        lib: {}
+      },
       init: function() {
         /*
          * 객체 내에서 this를 쓰기 위해 초기화 함수를 선언.
          * 파일을 선택하기 위해서는 glob 패턴을 사용해야함.
          * bower_components의 디렉토리를 제외한 파일들을 선택한다고 보면 됨.
          */
-        var html      = ['/**/*.html', '/bower_components/**/*.html'],
-            scss      = ['/**/*.scss', '/bower_components/**/*.scss'],
-            css       = ['/**/*.css', '/bower_components/**/*.css'],
-            js        = ['/**/*.js', '/bower_components/**/*.js'],
-            img       = ['/**/*.{png,gif,jpg,svg}', '/bower_components/**/*.{png,gif,jpg,svg}'],
-            lib       = {
+        var html          = ['/**/*.html', '/bower_components/**/*.html'],
+            scss          = ['/**/*.scss', '/bower_components/**/*.scss'],
+            css           = ['/**/*.css', '/bower_components/**/*.css'],
+            js            = ['/**/*.js', '/bower_components/**/*.js'],
+            img           = ['/**/*.{png,gif,jpg,svg}', '/bower_components/**/*.{png,gif,jpg,svg}'],
+            lib           = {
               css: [
-                '/bower_components/bootstrap/dist/css/bootstrap.min.css'
+                '/bower_components/bootstrap/dist/css/bootstrap.min.css',
+                '/bower_components/font-awesome/css/font-awesome.min.css'
               ],
               js: [
                 '/bower_components/angular/angular.min.js',
                 '/bower_components/chart.js/dist/Chart.min.js',
                 '/bower_components/angular-chart.js/dist/angular-chart.min.js'
-              ]
+              ],
+              fnt: '/bower_components/font-awesome/fonts/*.*'
             };
-        this.src.dir  = this.root + '/src';
-        this.dist.dir = this.root + '/public';
-        this.src.html = [this.src.dir + html[0], '!' + this.src.dir + html[1]];
-        this.src.scss = [this.src.dir + scss[0], '!' + this.src.dir + scss[1]];
-        this.src.css  = [this.src.dir + css[0], '!' + this.src.dir + css[1]];
-        this.src.js   = [this.src.dir + js[0], '!' + this.src.dir + js[1]];
-        this.src.img  = [this.src.dir + img[0], '!' + this.src.dir + img[1]];
+        this.src.dir      = this.root + '/src';
+        this.dist.dir     = this.root + '/public';
+        this.src.html     = [this.src.dir + html[0], '!' + this.src.dir + html[1]];
+        this.src.scss     = [this.src.dir + scss[0], '!' + this.src.dir + scss[1]];
+        this.src.css      = [this.src.dir + css[0], '!' + this.src.dir + css[1]];
+        this.src.js       = [this.src.dir + js[0], '!' + this.src.dir + js[1]];
+        this.src.img      = [this.src.dir + img[0], '!' + this.src.dir + img[1]];
+        this.src.lib.fnt  = this.src.dir + lib.fnt;
+        this.dist.lib.fnt = this.dist.dir + '/font-awesome/fonts';
         for(var i = 0; lib.js[i];) {
           this.src.lib.js[i] = this.src.dir + lib.js[i++];
         }
@@ -156,14 +162,17 @@ gulp.task('build', ['clean'], function() {
         return logDiff(data);
       }))
       .pipe(gulp.dest(path.dist.dir));
+  // 이미지 파일들 압축.
+  gulp.src(path.src.img)
+      .pipe(imgMin())
+      .pipe(gulp.dest(path.dist.dir));
   /*
-   * 이미지 파일들 압축.
-   * 이 작업은 비동기 방식으로 진행되기 때문에 작업의 끝을 알려줘야 함.
+   * font-awesome 라이브러리에서 쓰는 웹폰트를 복사.
+   * 이 작업들은 비동기 방식으로 진행되기 때문에 작업의 끝을 알려줘야 함.
    * 따라서 마지막 작업에 return을 붙여 동기식으로 바꿔줘야 함.
    */
-  return gulp.src(path.src.img)
-             .pipe(imgMin())
-             .pipe(gulp.dest(path.dist.dir));
+  return gulp.src(path.src.lib.fnt)
+             .pipe(gulp.dest(path.dist.lib.fnt));
 });
 // 배포용 파일을 실제로 테스트해보기 위한 작업.
 gulp.task('test', ['build'], function() {
