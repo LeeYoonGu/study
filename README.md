@@ -22,6 +22,7 @@ NPM으로 설치 가능한 컴포넌트들을 Bower에서도 설치 가능하지
 * **[NPM](https://docs.npmjs.com/getting-started/installing-node#updating-npm "NPM Getting Started 문서")**
 * **[Bower](https://bower.io/#install-bower "Bower 공식 사이트")**
 * **[Git](https://git-scm.com/download/ "Git 다운로드 페이지")** - Bower를 통해 컴포넌트를 설치하기 위해서 필요하다.
+* **[bower-npm-resolver](https://www.npmjs.com/package/bower-npm-resolver#installation "bower-npm-resolver 소개 페이지")** - NPM으로는 설치 가능하나 Bower로는 설치가 불가능한 컴포넌트를 위해 필요하다.
 * **[Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md#getting-started "Gulp Getting Started 문서")**
 * **[Chrome](https://www.google.com/chrome/browser/desktop/index.html "Google Chrome 브라우저 홈페이지")** - 필수는 아니지만, 자동 새로고침 확장앱을 사용하기 위해 필요하다.
 * **[LiveReload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei "LiveReload 확장앱 설치 페이지")** - Chrome 브라우저에서 자동 새로고침 기능을 사용하기 위해 필요하다.
